@@ -1,0 +1,21 @@
+{
+  "name": "angular-rest-api",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "rene.cardozo.2014@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.4.2"
+  }
+}

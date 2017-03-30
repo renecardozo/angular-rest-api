@@ -1,0 +1,21 @@
+{
+  "name": "angular-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renecardozo/angular-rest-api.git"
+  },
+  "keywords": [],
+  "author": "rene.cardozo.2014@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renecardozo/angular-rest-api/issues"
+  },
+  "homepage": "https://github.com/renecardozo/angular-rest-api#readme",
+  "dependencies": {}
+}
