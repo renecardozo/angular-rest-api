@@ -1,0 +1,17 @@
+<div class='md-padding' layout="row" layout-wrap>
+  <md-card class="card-bound" ng-repeat="repo in $ctrl.repos">
+    <md-card-content>
+      <md-button class="md-primary" ng-href="{{repo.owner.html_url}}" target="_blank">Go GitHub</md-button>
+      <md-divider ></md-divider>
+      <h2 class="md-title">Name: {{repo.name}}</h2>
+      <h2 class="md-title">Description:</h2>
+      <p> {{repo.description}}</p>
+      <md-divider ></md-divider>
+      <md-list flex>
+        <md-list-item class="md-2-line">Issues: {{repo.open_issues_count}}</md-list-item>
+        <md-list-item class="md-2-line">Open Issues: {{repo.open_issues}}</md-list-item>
+        <md-list-item class="md-2-line">Forks : {{repo.forks}}</md-list-item>
+      </md-list>
+    </md-card-content>
+  </md-card>
+</div>

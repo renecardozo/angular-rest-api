@@ -1,0 +1,12 @@
+<div class='md-padding' layout="row" layout-wrap>
+  <md-card class="card-bound" ng-repeat="user in $ctrl.users">
+    <img src="{{user.avatar_url}}" class="md-card-image" alt="user avatar">
+    <md-card-content>
+      <h2>{{user.login}}</h2>
+    </md-card-content>
+    <div class="md-actions" layout="row" layout-align="end center">
+      <md-button class="md-primary md-hue-1" ng-href="{{user.html_url}}" target="_blank">Go GitHub</md-button>
+      <md-button class="md-raised md-warn" ng-href="#!/repos/{{user.login}}">See More</md-button>
+    </div>
+  </md-card>
+</div>
