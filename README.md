@@ -10,7 +10,7 @@ This repository contains a little client to consume REST-API of Github, it displ
 
 ## Installation
 
-To install the package using bower and save as a dependency use...
+To install the package using bower
 
 ```bash
 bower install 
