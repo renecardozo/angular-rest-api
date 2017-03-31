@@ -1,6 +1,6 @@
 <div class='md-padding' layout="row" layout-wrap>
   <md-card class="card-bound" ng-repeat="user in $ctrl.users">
-    <img src="{{user.avatar_url}}" class="md-card-image" alt="user avatar">
+    <img ng-src="{{user.avatar_url}}" class="md-card-image" alt="user avatar">
     <md-card-content>
       <h2>{{user.login}}</h2>
     </md-card-content>
