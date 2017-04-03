@@ -8,7 +8,7 @@ var copyBower = require('./gulp-tasks/copy-bower');
 var copySource = require('./gulp-tasks/copy-sources');
 var cleanTempSource = require('./gulp-tasks/clean-temp-sources');
 var copyHtml = require('./gulp-tasks/copy-html');
-var production = gulp.series( 
+var dev = gulp.series( 
                               taskClean.clean,
                               taskStyles.styles, 
                               taskConcat.concat,
@@ -18,8 +18,8 @@ var production = gulp.series(
                               copySource.copySources,
                               cleanTempSource.cleanTempSource
                               );
-gulp.task('default', production);
-gulp.task('production', production);
+gulp.task('default', dev);
+gulp.task('dev', dev);
 gulp.task('clean', taskClean.clean);
 gulp.task('cssmin', taskStyles.styles);
 gulp.task('jsmin', taskConcat.concat);

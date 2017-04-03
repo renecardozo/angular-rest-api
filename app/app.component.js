@@ -1,6 +1,17 @@
 (function(){
   'use strict';
-  var app = angular.module('app');
+  var app = angular.module('app', ['ngMaterial','ui.router','ui-notification'])
+    .config(function(NotificationProvider) {
+      NotificationProvider.setOptions({
+          delay: 2000,
+          startTop: 20,
+          startRight: 10,
+          verticalSpacing: 20,
+          horizontalSpacing: 20,
+          positionX: 'left',
+          positionY: 'bottom'
+      });
+    });
   app.component('appComponent', {
     template: `
       <div ng-cloak>

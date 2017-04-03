@@ -10,7 +10,6 @@ module.exports = {
       .pipe(babel({
           presets: ['es2015']
       }))
-      // .pipe(uglify())
       .pipe(concat('app.min.js'))
       .pipe(gulp.dest(paths.gulp.scripts.dest));
   }

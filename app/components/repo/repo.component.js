@@ -4,7 +4,7 @@
   app.component('repoComponent',{
     bindings: {
     },
-    templateUrl: './repo.html',
+    templateUrl: 'repo.html',
     controller: 'repoController'
   });
 })();

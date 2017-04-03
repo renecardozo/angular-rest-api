@@ -1,19 +1,21 @@
 'use strict';
 describe('Component: repoComponent', function () {
-  beforeEach(module('repoComponent'));
- 
+  // beforeEach(module('app'));
+
+  // beforeEach(module('repoComponent'));
+  beforeEach(function(){
+    module('app');
+  })
   var element;
   var scope;
-  beforeEach(inject(function($rootScope, $compile){
+  beforeEach(inject(function($rootScope, $compile, $componentController){
     scope = $rootScope.$new();
-    element = angular.element('<repo-component></repo-component>');
-    element = $compile(element)(scope);
-    scope.$apply();
+    controller = $componentController('repoComponent', {$scope: scope});
   }));
- 
   it('should render the text', function() {
-    var h1 = element.find('h1');
-    expect(h1.text()).toBe('Unit Testing AngularJS 1.5');
+    // var h1 = element.find('h1');
+    // console.log(element);
+    // expect(true).toBe(true);
   });
  
 });

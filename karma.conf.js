@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: '.',
 
 
     // frameworks to use
@@ -15,12 +15,25 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'test/**/*.spec.js',
       'bower_components/angular/angular.js',
+      'bower_components/angular-animate/angular-animate.js',
+      'bower_components/angular-aria/angular-aria.js',
+      'bower_components/angular-messages/angular-messages.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/angular-ui-notification/dist/angular-ui-notification.js',
+      'bower_components/angular-material/angular-material.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'app/components/**/*.js',
-      'app/*.js',
-      'app/components/**/*.html'
+      'dist/*.js',
+      'dist/repo.html',
+      // 'app/components/repo/*.component.js',
+      // 'app/components/repo/*.controller.js',
+      // 'app/components/repo/*.service.js',
+      // 'app/components/repo/*.html',
+      // 'app/components/user/*.component.js',
+      // 'app/components/user/*.controller.js',
+      // 'app/components/user/*.service.js',
+      // 'app/components/user/*.html',
+      'test/**/**/*.spec.js'
     ],
 
 

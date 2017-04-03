@@ -19,17 +19,26 @@ To run the server install
 
 ```bash
 npm install -g http-server 
-```  
+```
 ## Usage
 
 To run the application typing the follow in your console
 
+1:
+```bash
+gulp dev
+```
+
+2:
 ```bash
 npm start
 ```
 
+## Add gulp task
+```bash
+npm install -g gulp 
+```
+
 ## Improvements
 
-- Automatization of tasks using task runner [Gulp](http://gulpjs.com/) 
 - Unit Test 
-- Add pagination.

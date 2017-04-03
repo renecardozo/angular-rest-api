@@ -1,11 +1,11 @@
 module.exports = {
   'gulp': {
     'styles': {
-      'src': ['./app/components/repo/*.css','./app/components/user/*.css'],
+      'src': './app/*.css',
       'dest': './'
     },
     'scripts':{
-      'src': ['./app/components/**/*.js', './app/*.js'],
+      'src': ['./app/*.js', './app/components/**/*.js'],
       'dest': './'
     },
     'inject': {

@@ -7,9 +7,9 @@
     return {
       getRepositories: getRepositories
     }
-    function getRepositories(owner){
+    function getRepositories(owner, page, perPage){
      return new Promise((resolve, reject)=>{
-        $http.get('https://api.github.com/users/'+owner+'/repos')
+        $http.get('https://api.github.com/users/'+owner+'/repos?page='+page.toString()+'&per_page='+perPage.toString())
         .then((response) => resolve(response.data), (error) => reject(error));
       })
     }
