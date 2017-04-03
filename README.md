@@ -10,7 +10,7 @@ This repository contains a little client to consume REST-API of Github, it displ
 
 ## Installation
 
-To install the package using bower
+To install the package using bower.
 
 ```bash
 bower install 
@@ -32,4 +32,4 @@ npm start
 
 - Automatization of tasks using task runner [Gulp](http://gulpjs.com/) 
 - Unit Test 
-- Add pagination
+- Add pagination.
