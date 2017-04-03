@@ -1,7 +1,7 @@
 (function(){
   'use strict';
   var app = angular.module('app');
-  app.config(function($stateProvider) {
+  app.config(function($stateProvider, $urlRouterProvider) {
     
     $stateProvider.state('users', {
       url: '/users',
@@ -12,6 +12,8 @@
       url: '/repos/:owner',
       component: 'repoComponent'
     });
+
+    $urlRouterProvider.otherwise('/users');
 
   });
 })();

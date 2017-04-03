@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+    "start": "http-server -a localhost -p 8000 -c-1 ./dist"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,23 @@
     "url": "https://github.com/renecardozo/angular-rest-api/issues"
   },
   "homepage": "https://github.com/renecardozo/angular-rest-api#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": "^1.6.4",
+    "babel-preset-es2015": "^6.24.0",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify": "^2.1.2",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "main-bower-files": "^2.13.1"
+  }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html ng-app="app" >
 <head>
   <title></title>
@@ -42,4 +42,47 @@
 <body>
   <app-component></app-component>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>GitHub User</title>
+    <!-- bower:css -->
+    <!-- bower installed css files will go here... -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+    
+    <!-- bower:js -->
+    <!-- bower installed scripts will go here... -->
+    <!-- endinject -->
+
+
+    <script type="text/javascript">
+      (function(){
+        'use strict';
+        angular.module('app', ['ngMaterial','ui.router','ui-notification'])
+        .config(function(NotificationProvider) {
+          NotificationProvider.setOptions({
+              delay: 10000,
+              startTop: 20,
+              startRight: 10,
+              verticalSpacing: 20,
+              horizontalSpacing: 20,
+              positionX: 'left',
+              positionY: 'bottom'
+          });
+        });
+      })();
+    </script>
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+  </head>
+  <body>
+    <app-component></app-component>
+  </body>
 </html>

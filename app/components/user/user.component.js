@@ -2,7 +2,7 @@
   'use strict';
   var app = angular.module('app');
   app.component('userComponent', {
-    templateUrl: './components/user/user.html',
+    templateUrl: './user.html',
     controller: 'userController'
   });
 })();
